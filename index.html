@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prüfungstrainer</title>
+  <meta name="description" content="Prüfungsvorbereitung: Kenntnisse für Beratung und Vertrieb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231463b8'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="brand" data-action="nav" data-arg="dashboard">
+        <span class="brand-mark" aria-hidden="true">✓</span>
+        <span>Prüfungstrainer</span>
+      </button>
+      <nav id="nav" class="nav" hidden>
+        <button data-action="nav" data-arg="dashboard">Dashboard</button>
+        <button data-action="nav" data-arg="training">Training</button>
+        <button data-action="nav" data-arg="verlauf">Verlauf</button>
+        <button data-action="nav" data-arg="fragen">Fragen</button>
+      </nav>
+      <button id="user-chip" class="user-chip" data-action="nav" data-arg="profil" hidden></button>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="fragen.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
